@@ -33,7 +33,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
 
-      - run: make fmt
+      - run: go fmt ./...
 
   Lint:
     runs-on: ubuntu-latest
