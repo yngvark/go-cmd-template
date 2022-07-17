@@ -41,18 +41,17 @@ jobs:
       - name: Install Go
         uses: actions/setup-go@v3
         with:
-          go-version: 1.16
+          go-version: 1.18
 
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@537aa1903e5d359d0b27dbc19ddd22c5087f3fbc #v2.5.2
+        uses: golangci/golangci-lint-action@v3
         with:
           version: v1.46.2 # golangci-lint version, optional
+          # Optional: show only new issues if it's a pull request. The default value is `false`
           only-new-issues: true
-          # if set to true then action uses pre-installed Go
-          skip-go-installation: true
 
   Test:
     runs-on: ubuntu-latest
