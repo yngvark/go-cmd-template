@@ -1,0 +1,34 @@
+linters:
+    enable-all: true
+    disable:
+        - golint
+        - interfacer # Deprecated
+        - maligned # Deprecated
+        - exhaustivestruct # Deprecated
+        - scopelint # Deprecated
+        - bodyclose # Deprecated
+        - contextcheck # Deprecated
+        - interfacer # Deprecated
+        - nilerr # Deprecated
+        - noctx # Deprecated
+        - rowserrcheck # Deprecated
+        - sqlclosecheck # Deprecated
+        - structcheck # Deprecated
+        - tparallel # Deprecated
+        - unparam # Deprecated
+        - wastedassign # Deprecated
+        - forbidigo # Complains on using fmt.Println
+        - revive # Complains on underscores in package names
+        - stylecheck # Complains on underscores in package names
+linters-settings:
+    gci: # This is a workaround that should be removed, see
+        # https://github.com/golangci/golangci-lint/issues/1490#issuecomment-1186947213
+        # https://github.com/golangci/golangci-lint/issues/1490
+        sections:
+            - standard
+            - default
+            - prefix(yngvark.com/go-cmd-template)
+
+
+issues:
+    exclude-use-default: false
