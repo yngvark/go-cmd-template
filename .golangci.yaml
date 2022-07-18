@@ -28,7 +28,3 @@ linters-settings:
             - standard
             - default
             - prefix(yngvark.com/go-cmd-template)
-
-
-issues:
-    exclude-use-default: false
