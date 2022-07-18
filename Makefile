@@ -32,7 +32,7 @@ check: fmt lint ## Run fmt and lint (so you have one command use in your dev flo
 
 # https://github.com/mvdan/gofumpt
 install-gofumpt:
-	go install mvdan.cc/gofumpt@v0.3.1
+	@go install mvdan.cc/gofumpt@v0.3.1
 
 # # https://golangci-lint.run/usage/install/#local-installation
 install-lint:
