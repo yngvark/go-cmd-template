@@ -1,4 +1,4 @@
-package my_feature
+package hello_printer
 
 func Hello() string {
 	return "Hello"

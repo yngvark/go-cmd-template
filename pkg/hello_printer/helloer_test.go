@@ -1,11 +1,11 @@
-package my_feature_test
+package hello_printer_test
 
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/yngvark.com/go-cmd-template/pkg/hello_printer"
 
-	"yngvark.com/go-cmd-template/pkg/my_feature"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSayHello(t *testing.T) {
@@ -25,7 +25,7 @@ func TestSayHello(t *testing.T) {
 		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			t.Parallel()
-			assert.Equal(t, tc.expect, my_feature.Hello())
+			assert.Equal(t, tc.expect, hello_printer.Hello())
 		})
 	}
 }

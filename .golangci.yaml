@@ -17,9 +17,12 @@ linters:
         - tparallel # Deprecated
         - unparam # Deprecated
         - wastedassign # Deprecated
+        - wrapcheck # Deprecated
         - forbidigo # Complains on using fmt.Println
         - revive # Complains on underscores in package names
         - stylecheck # Complains on underscores in package names
+        - exhaustruct # Complains about unused struct fields, that doesn't make any sense
+        - gci # It's just gets in the way too often with hard-to-understand messages
 linters-settings:
     gci: # This is a workaround that should be removed, see
         # https://github.com/golangci/golangci-lint/issues/1490#issuecomment-1186947213
@@ -27,4 +30,4 @@ linters-settings:
         sections:
             - standard
             - default
-            - prefix(yngvark.com/go-cmd-template)
+            - prefix(github.com/yngvark.com/go-cmd-template)

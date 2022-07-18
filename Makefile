@@ -12,7 +12,7 @@ test: install-richgo ## -
 
 build: ## -
 	mkdir -p ./build
-	go build -o ./build/xctl
+	go build -o ./build/go-cmd-template
 
 run: ## -
 	go run ./...

@@ -1,11 +1,7 @@
 package main
 
-import (
-	"fmt"
-
-	"yngvark.com/go-cmd-template/pkg/my_feature"
-)
+import "github.com/yngvark.com/go-cmd-template/cmd"
 
 func main() {
-	fmt.Println(my_feature.Hello())
+	cmd.Run()
 }
